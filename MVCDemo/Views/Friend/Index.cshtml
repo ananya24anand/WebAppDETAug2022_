@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<Friend>
+<table style="border: 1px solid black;">
+    <tr>
+        <th width="400" style="border: 1px solid black;">Friend ID</th>
+        <th width="400" style="border: 1px solid black;">Friend Name</th>
+        <th width="400" style="border: 1px solid black;">Place</th>
+        <th width="300" style="border: 1px solid black;"></th>
+    </tr>
+    
+    <tr>
+        @foreach (Friend f in @Model)
+        {
+            <td width="400" style="border: 1px solid black;">@f.FriendID</td>
+            <td width="400" style="border: 1px solid black;">@f.FriendName</td>
+            <td width="400" style="border: 1px solid black;">@f.Place</td>
+        }
+
+    </tr>
+
+   
+   
+
+</table>
+    
+   

@@ -1,0 +1,25 @@
+﻿No.of Pizzas available = @Model.Count
+<div class="table-responsive">
+	<p>Details</p>
+	<table class="table" style="border: 1px solid black";>
+		<tr>
+			<th width="300" style="border: 1px solid black;">ID</th>
+			<th width="300" style="border: 1px solid black;">Name</th>
+			<th width="300" style="border: 1px solid black;">Size</th>
+			<th width="300" style="border: 1px solid black;">Gluten Free</th>
+			<th width="300" style="border: 1px solid black;">Price</th>
+		</tr>
+
+		@foreach(Pizza p in Model)
+		{
+			<tr>
+				<td width="300" style="border: 1px solid black;">@p.Id</td>
+				<td width ="300" style="border: 1px solid black;">@p.Name</td>
+				<td width="300" style="border: 1px solid black;">@p.Size</td>
+				<td width="300" style="border: 1px solid black;">@p.IsGlutenFree</td>
+				<td width="300" style="border: 1px solid black;">@p.Price</td>
+			</tr>
+		}
+		
+	</table>
+</div>
