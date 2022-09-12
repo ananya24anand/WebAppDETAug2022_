@@ -1,0 +1,46 @@
+﻿@model IEnumerable<MVCDemo.Models.Friend>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1>List</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Place)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FriendID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FriendName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Place)
+            </td>
+            <td>
+                @Html.ActionLink("Create", "Create",  new { id=item.FriendID }) |
+                @Html.ActionLink("Update", "Update",  new { id=item.FriendID }) |
+               @* @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                    @Html.ActionLink("Delete", "Delete", new { id=item.FriendID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

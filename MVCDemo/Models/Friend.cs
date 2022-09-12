@@ -8,13 +8,13 @@ namespace MVCDemo.Models
 {
     public class Friend
     {
-        //[Required]
+        [Required]
         public int FriendID { get; set; }
 
-        //[DisallowNull(ErrorMessage = "Friend Name Empty Not Allowed.")]
+        [DisallowNull]
         public string FriendName { get; set; }
 
-        //[MaxLength(25)]
+        [MaxLength(25)]
 
         public string Place { get; set; }
     }

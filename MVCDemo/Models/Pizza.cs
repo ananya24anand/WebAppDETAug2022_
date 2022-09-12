@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace MVCDemo.Models
 {
@@ -9,6 +10,8 @@ namespace MVCDemo.Models
         [Required]
         public string Name { get; set; }
         public PizzaSize Size { get; set; }
+
+  
         public bool IsGlutenFree { get; set; }
 
         [Range(0.01, 9999.99)]

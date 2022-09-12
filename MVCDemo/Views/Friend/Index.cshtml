@@ -1,30 +1,48 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
+@model IEnumerable<MVCDemo.Models.Friend>
 @{
+    ViewData["Title"] = "Index";
 }
-@model List<Friend>
-<table style="border: 1px solid black;">
-    <tr>
-        <th width="400" style="border: 1px solid black;">Friend ID</th>
-        <th width="400" style="border: 1px solid black;">Friend Name</th>
-        <th width="400" style="border: 1px solid black;">Place</th>
-        <th width="300" style="border: 1px solid black;"></th>
-    </tr>
-    
-    <tr>
-        @foreach (Friend f in @Model)
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FriendName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Place)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
         {
-            <td width="400" style="border: 1px solid black;">@f.FriendID</td>
-            <td width="400" style="border: 1px solid black;">@f.FriendName</td>
-            <td width="400" style="border: 1px solid black;">@f.Place</td>
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FriendID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FriendName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Place)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.FriendID">Edit</a> |
+                    
+                    <a asp-action="Delete" asp-route-id="@item.FriendID">Delete</a>
+                </td>
+            </tr>
         }
-
-    </tr>
-
-   
-   
-
+    </tbody>
 </table>
-    
-   
