@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDemo", "APIDemo\APIDemo.csproj", "{B777D810-BC76-4FAB-9555-8874DBD66808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAPIClient", "ConsoleAPIClient\ConsoleAPIClient.csproj", "{35380C97-18E8-43A0-AD1A-BF871FB82065}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{4076D3F8-14D0-4413-B942-6818A31FDA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4076D3F8-14D0-4413-B942-6818A31FDA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4076D3F8-14D0-4413-B942-6818A31FDA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B777D810-BC76-4FAB-9555-8874DBD66808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B777D810-BC76-4FAB-9555-8874DBD66808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B777D810-BC76-4FAB-9555-8874DBD66808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B777D810-BC76-4FAB-9555-8874DBD66808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35380C97-18E8-43A0-AD1A-BF871FB82065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35380C97-18E8-43A0-AD1A-BF871FB82065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35380C97-18E8-43A0-AD1A-BF871FB82065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35380C97-18E8-43A0-AD1A-BF871FB82065}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
