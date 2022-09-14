@@ -14,9 +14,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDemo", "APIDemo\APIDemo.csproj", "{B777D810-BC76-4FAB-9555-8874DBD66808}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIDemo", "APIDemo\APIDemo.csproj", "{B777D810-BC76-4FAB-9555-8874DBD66808}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAPIClient", "ConsoleAPIClient\ConsoleAPIClient.csproj", "{35380C97-18E8-43A0-AD1A-BF871FB82065}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAPIClient", "ConsoleAPIClient\ConsoleAPIClient.csproj", "{35380C97-18E8-43A0-AD1A-BF871FB82065}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bank", "Bank\Bank.csproj", "{67580E89-B72D-48A1-8396-16D9A807E617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankTests", "BankTests\BankTests.csproj", "{EFC56E79-754C-4F24-8FB6-8339E8CDF73F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstUnitTests", "BankXTest\MyFirstUnitTests.csproj", "{678626AF-E2EB-4299-B95C-F463F3BFCB22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +50,18 @@ Global
 		{35380C97-18E8-43A0-AD1A-BF871FB82065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35380C97-18E8-43A0-AD1A-BF871FB82065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35380C97-18E8-43A0-AD1A-BF871FB82065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67580E89-B72D-48A1-8396-16D9A807E617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67580E89-B72D-48A1-8396-16D9A807E617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67580E89-B72D-48A1-8396-16D9A807E617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67580E89-B72D-48A1-8396-16D9A807E617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC56E79-754C-4F24-8FB6-8339E8CDF73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC56E79-754C-4F24-8FB6-8339E8CDF73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC56E79-754C-4F24-8FB6-8339E8CDF73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC56E79-754C-4F24-8FB6-8339E8CDF73F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{678626AF-E2EB-4299-B95C-F463F3BFCB22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{678626AF-E2EB-4299-B95C-F463F3BFCB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{678626AF-E2EB-4299-B95C-F463F3BFCB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{678626AF-E2EB-4299-B95C-F463F3BFCB22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
